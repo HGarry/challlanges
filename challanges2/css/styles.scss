@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Transparent-white: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: $Very-light-gray;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.5rem;
+  background-color: $Very-light-gray;
+  @media (min-width: 768px) {
+    font-size: 11px;
+    line-height: 1.2rem;
+  }
+}
+
+.container {
+  max-width: 700px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3rem 1rem;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  .card {
+    padding: 3rem;
+    @media (min-width: 768px) {
+      padding: 1.5rem 2.5rem;
+    }
+
+    &:nth-child(1) {
+      background-color: $Bright-orange;
+      button {
+        color: $Bright-orange;
+      }
+    }
+    &:nth-child(2) {
+      background-color: $Dark-cyan;
+      button {
+        color: $Dark-cyan;
+      }
+    }
+    &:nth-child(3) {
+      background-color: $Very-dark-cyan;
+      button {
+        color: $Very-dark-cyan;
+      }
+    }
+    .detail {
+      img {
+        @media (min-width: 768px) {
+          width: 2.5rem;
+        }
+      }
+      h2 {
+        margin: 1.5rem 0;
+        @media (min-width: 768px) {
+          font-size: 1.8rem;
+        }
+      }
+      p {
+        color: $Transparent-white;
+      }
+    }
+    button {
+      font-size: 16px;
+      color: $Very-light-gray;
+      margin: 3rem 0 1rem;
+      border-radius: 50px;
+      border: 0;
+      overflow: hidden;
+      padding: 15px 25px;
+      text-transform: capitalize;
+      @media (min-width: 768px) {
+        padding: 8px 20px;
+      }
+    }
+  }
+}

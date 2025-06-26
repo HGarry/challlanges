@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.5rem;
+  background-color: hsl(0, 0%, 95%);
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 11px;
+    line-height: 1.2rem;
+  }
+}
+
+.container {
+  max-width: 700px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3rem 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+}
+.container .card {
+  padding: 3rem;
+}
+@media (min-width: 768px) {
+  .container .card {
+    padding: 1.5rem 2.5rem;
+  }
+}
+.container .card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+.container .card:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+.container .card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.container .card:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+.container .card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+.container .card:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
+@media (min-width: 768px) {
+  .container .card .detail img {
+    width: 2.5rem;
+  }
+}
+.container .card .detail h2 {
+  margin: 1.5rem 0;
+}
+@media (min-width: 768px) {
+  .container .card .detail h2 {
+    font-size: 1.8rem;
+  }
+}
+.container .card .detail p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container .card button {
+  font-size: 16px;
+  color: hsl(0, 0%, 95%);
+  margin: 3rem 0 1rem;
+  border-radius: 50px;
+  border: 0;
+  overflow: hidden;
+  padding: 15px 25px;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .container .card button {
+    padding: 8px 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
