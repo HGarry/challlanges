@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.custom-btn,
+a {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+.hero-section {
+  min-height: 80vh;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-size: contain;
+  background-position: center;
+}
+.hero-section .custom-btn {
+  font-size: 14px;
+  background-color: hsl(51, 100%, 49%);
+}
+@media (min-width: 768px) {
+  .hero-section .custom-btn {
+    background-color: white;
+  }
+}
+.hero-section .arrow-icon {
+  width: 20px;
+}
+.hero-section .navbar-collapse {
+  background-color: aliceblue;
+}
+@media (min-width: 768px) {
+  .hero-section .navbar-collapse {
+    background-color: transparent;
+  }
+}
+.hero-section h1 {
+  letter-spacing: 4px;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+@media (min-width: 768px) {
+  .hero-section {
+    background-image: url(../images/desktop/image-header.jpg);
+    min-height: 90vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-section .info {
+    max-width: 60%;
+  }
+}
+.info-section .info h2 {
+  font-size: clamp(2rem, 3vw, 2rem);
+}
+.info-section .info p {
+  color: hsl(232, 10%, 55%);
+  line-height: 1.8;
+}
+.info-section .info a {
+  color: hsl(212, 27%, 19%);
+  letter-spacing: 1px;
+}
+.info-section .info .line1 {
+  width: 140px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: hsl(51, 100%, 49%);
+  opacity: 40%;
+  margin-top: -10px;
+}
+.info-section .info .line1:hover {
+  opacity: 100%;
+}
+.info-section .info .line2 {
+  width: 140px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: hsl(7, 99%, 70%);
+  opacity: 40%;
+  margin-top: -10px;
+}
+.info-section .info .line2:hover {
+  opacity: 100%;
+}
+
+.design-section .graphic-text {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .design-section .graphic-text {
+    width: 50%;
+  }
+}
+.design-section .graphic-text p {
+  color: hsl(232, 10%, 55%);
+}
+
+.client-section .client {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .client-section .client {
+    width: 32%;
+  }
+}
+.client-section h3 {
+  color: hsl(210, 4%, 67%);
+}
+.client-section img {
+  width: 4rem;
+}
+.client-section p {
+  color: hsl(213, 9%, 39%);
+}
+.client-section .name p {
+  color: hsl(210, 4%, 67%);
+}
+
+.footer-section {
+  background-color: #8bd1c4;
+}
+.footer-section a {
+  color: hsl(167, 34%, 41%);
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */

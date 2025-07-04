@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+$Red-400: hsl(7, 99%, 70%);
+$Yellow-500: hsl(51, 100%, 49%);
+$Green-800: hsl(167, 40%, 24%);
+$Blue-800: hsl(198, 62%, 26%);
+$Green-500: hsl(167, 34%, 41%);
+$Grey-950: hsl(212, 27%, 19%);
+$Grey-600: hsl(213, 9%, 39%);
+$Grey-550: hsl(232, 10%, 55%);
+$Grey-400: hsl(210, 4%, 67%);
+$White: hsl(0, 100%, 100%);
+$Width: 768px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.custom-btn,
+a {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+.hero-section {
+  min-height: 80vh;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-size: contain;
+  background-position: center;
+  .custom-btn {
+    font-size: 14px;
+    background-color: $Yellow-500;
+
+    @media (min-width: 768px) {
+      background-color: white;
+    }
+  }
+
+  .arrow-icon {
+    width: 20px;
+  }
+
+  .navbar-collapse {
+    background-color: aliceblue;
+    @media (min-width: 768px) {
+      background-color: transparent;
+    }
+  }
+
+  h1 {
+    letter-spacing: 4px;
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+
+  @media (min-width: $Width) {
+    background-image: url(../images/desktop/image-header.jpg);
+    min-height: 90vh;
+  }
+}
+
+.info-section {
+  .info {
+    @media (min-width: $Width) {
+      max-width: 60%;
+    }
+    h2 {
+      font-size: clamp(2rem, 3vw, 2rem);
+    }
+    p {
+      color: $Grey-550;
+      line-height: 1.8;
+    }
+    a {
+      color: $Grey-950;
+      letter-spacing: 1px;
+    }
+    .line1 {
+      width: 140px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: $Yellow-500;
+      opacity: 40%;
+      margin-top: -10px;
+    }
+
+    .line1:hover {
+      opacity: 100%;
+    }
+
+    .line2 {
+      width: 140px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: $Red-400;
+      opacity: 40%;
+      margin-top: -10px;
+    }
+
+    .line2:hover {
+      opacity: 100%;
+    }
+  }
+}
+
+.design-section {
+  .graphic-text {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    p {
+      color: $Grey-550;
+    }
+  }
+}
+
+.client-section {
+  .client {
+    width: 80%;
+    @media (min-width: $Width) {
+      width: 32%;
+    }
+  }
+  h3 {
+    color: $Grey-400;
+  }
+  img {
+    width: 4rem;
+  }
+  p {
+    color: $Grey-600;
+  }
+  .name {
+    p {
+      color: $Grey-400;
+    }
+  }
+}
+
+.footer-section {
+  background-color: #8bd1c4;
+  a {
+    color: $Green-500;
+    text-decoration: none;
+  }
+}
