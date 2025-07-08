@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "technology";
+  src: url(technology.bold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "technology";
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.digital-clock {
+  box-shadow: 0px 0px 105px 28px rgba(255, 0, 0, 0.88);
+  -webkit-box-shadow: 0px 0px 105px 28px rgba(255, 0, 0, 0.88);
+  -moz-box-shadow: 0px 0px 105px 28px rgba(255, 0, 0, 0.88);
+}
+
+.clock {
+  color: white;
+  text-shadow: 3px 3px black;
+  padding: 30px;
+  background-color: red;
+  border-radius: 30px;
+}
+
+.buttons button {
+  text-shadow: 3px 3px black;
+  color: white;
+  background-color: red;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital-Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="d-flex align-items-center justify-content-center">
+    <div
+      class="digital-clock d-flex align-items-center justify-content-center bg-black rounded-5 pe-3"
+    >
+      <div
+        class="clock d-flex align-items-center justify-content-center flex-column"
+      >
+        <h2 id="day"></h2>
+        <h1 id="clock"></h1>
+        <p id="date"></p>
+      </div>
+      <div class="buttons gap-3 d-flex flex-column ms-3">
+        <button
+          class="rounded-pill border-0 px-2"
+          type="button"
+          onclick="myColor1()"
+        >
+          Click
+        </button>
+        <button
+          class="rounded-pill border-0 px-2"
+          type="button"
+          onclick="myColor2()"
+        >
+          Click
+        </button>
+        <button
+          class="rounded-pill border-0 px-2"
+          type="button"
+          onclick="myColor3()"
+        >
+          Click
+        </button>
+        <button
+          class="rounded-pill border-0 px-2"
+          type="button"
+          onclick="myColor4()"
+        >
+          Click
+        </button>
+      </div>
+    </div>
+
+    <script>
+      setInterval(myClock, 1000);
+      function myClock() {
+        let currentTime = new Date();
+        let day = currentTime.getDay();
+
+        switch (day) {
+          case 1:
+            day = "Monday";
+            break;
+          case 2:
+            day = "Tuesday";
+            break;
+          case 3:
+            day = "Wednesday";
+            break;
+          case 4:
+            day = "Thursday";
+            break;
+          case 5:
+            day = "Friday";
+            break;
+          case 6:
+            day = "Saturady";
+            break;
+          case 7:
+            day = "Sunday";
+            break;
+        }
+
+        let h1Element = document.getElementById("clock");
+        let pElement = document.getElementById("date");
+        let h2Element = document.getElementById("day");
+
+        h1Element.innerHTML = currentTime.toLocaleTimeString();
+        pElement.innerHTML = currentTime.toLocaleDateString();
+        h2Element.innerHTML = day;
+      }
+      function myColor1() {
+        document.body.style.background = "#282828";
+      }
+      function myColor2() {
+        document.body.style.background = "#0A2A0A";
+      }
+      function myColor3() {
+        document.body.style.background = "#000033";
+      }
+      function myColor4() {
+        document.body.style.background = "#52002C";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
