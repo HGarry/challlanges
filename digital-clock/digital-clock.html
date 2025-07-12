@@ -14,7 +14,8 @@
   </head>
   <body class="d-flex align-items-center justify-content-center">
     <div
-      class="digital-clock d-flex align-items-center justify-content-center bg-black rounded-5 pe-3"
+      id="clockBox"
+      class="digital-clock d-flex align-items-center justify-content-center rounded-5 pe-3"
     >
       <div
         class="clock d-flex align-items-center justify-content-center flex-column"
@@ -88,6 +89,7 @@
         let h1Element = document.getElementById("clock");
         let pElement = document.getElementById("date");
         let h2Element = document.getElementById("day");
+        let clockBox = document.getElementById("clockBox");
 
         h1Element.innerHTML = currentTime.toLocaleTimeString();
         pElement.innerHTML = currentTime.toLocaleDateString();
@@ -95,6 +97,8 @@
       }
       function myColor1() {
         document.body.style.background = "#282828";
+        clockBox.style.background = "yellow";
+        console.log(clockBox);
       }
       function myColor2() {
         document.body.style.background = "#0A2A0A";
