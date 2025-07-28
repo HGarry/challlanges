@@ -1,4 +1,5 @@
 let theme = document.documentElement;
+
 console.log(theme);
 let btns = document.querySelectorAll(".btn");
 console.log(btns);
@@ -17,3 +18,12 @@ btns.forEach((btn) => {
     }
   });
 });
+
+setInterval(myClock, 1000);
+function myClock() {
+  let currentTime = new Date();
+
+  let h1Element = document.getElementById("clock");
+
+  h1Element.innerHTML = currentTime.toLocaleTimeString();
+}
