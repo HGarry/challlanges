@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+
+// ## Gradients
+
+$Light-slate-blue: hsl(252, 100%, 67%);
+$Light-royal-blue: hsl(241, 81%, 54%);
+
+$Violet-blue: hsla(256, 72%, 46%, 1);
+$Persian-blue: hsla(241, 72%, 46%, 0);
+
+// ### Neutral
+
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+
+  font-style: normal;
+}
+p {
+  color: $Light-lavender;
+}
+
+h1,
+h3,
+.btn {
+  color: $White;
+}
+.btn {
+  background: $Dark-gray-blue;
+}
+.left-side {
+  background: linear-gradient($Light-slate-blue, $Light-royal-blue);
+  h5 {
+    color: $Light-lavender;
+  }
+  .circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: linear-gradient($Violet-blue, $Persian-blue);
+    h1 {
+      font-size: 3.6rem;
+    }
+  }
+}
+.summary {
+  color: $Dark-gray-blue;
+}
+.reaction {
+  background: hsla(0, 100%, 67%, 0.121);
+  span {
+    color: $Light-red;
+  }
+}
+
+.memory {
+  background: hsla(39, 100%, 56%, 0.138);
+  span {
+    color: $Orangey-yellow;
+  }
+}
+
+.verbal {
+  background: hsla(166, 100%, 37%, 0.136);
+  span {
+    color: $Green-teal;
+  }
+}
+
+.visual {
+  background: hsla(234, 85%, 45%, 0.131);
+  span {
+    color: $Cobalt-blue;
+  }
+}
+
+.container-card {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+}
+@media (max-width: 768px) {
+  .container-card {
+    border-radius: 0rem;
+  }
+}
